@@ -2,37 +2,131 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
+  flex-basis: 100wh;
+}
+.f-column {
+  display: flex;
+  flex: 1 1;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+}
+.f-row {
+  display: flex;
+  flex: 1 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.d-inlineflex {
+  display: inline-flex !important;
+}
+.bgPurple {
+  /* background-color: purple; */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.text-white {
+  /* color: white; */
+}
+
+.p2 {
+  padding: 1em;
+}
+
+.img-fluid {
+  max-width: 50%;
+  max-height: 50%;
+  height: auto;
+}
+
+input[type="text"] {
+  margin: 1rem;
+  height: 2rem;
+  min-width: 30%;
+  max-width: 80%;
+  width: auto;
+  /* width: 300px; */
+}
+
+input[type="submit"] {
+  padding: 0.5rem;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+input[type="submit"]:hover {
+  transition: 0.2s;
+  transform: scale(1.2);
+}
+
+form {
+  padding: 1rem 3rem 3rem 3rem;
+  /* border: 1px;
+  border-style: solid;
+  border-radius: 10px; */
+  max-width: 100%;
+  max-height: 50%;
+  height: auto;
+}
+
+div.alert {
+  margin-top: 10px;
+  padding: 1rem;
+}
+
+.success {
+  color: green;
+}
+.failure {
+  color: red;
+}
+table {
+  border-collapse: collapse;
+  width: 40%;
+  height: fit-content;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: purple;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
